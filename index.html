@@ -4,9 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="bg-dark text-light text-center" id="hero">
+        <h1>Craving Finder</h1>
+    </div>
+    <div class="row min-vh-100">
+        <header class="col-2 d-flex flex-column bg-dark text-light">
+            <h1>What are you craving?</h1>
+            <input type="text">
+            <button>Find It!</button>
+
+        </header>
+        <main class="col-10 d-flex flex-column">
+            <div class="row">
+                <div class="col-6 border-right border-secondary min-vh-100" id="find-restaurant">
+                    <h2 class="text-center">Find Restaurant</h2>
+                    <h3>Restaurant Name</h3>
+                        <img src="./assets/images/map1.png" class="rounded" alt="map of Restaurant area">
+                    <p>Restaurant description</p>
+                </div>
+                <div class="col-6 border-left border-secondary min-vh-100" id="make-at-home">
+                    <h2 class="text-center">Make It At Home</h2>
+                    <img src="./assets/images/food1.jpg" class="rounded" alt="turkey">
+                    <ul>Ingredient List and Amounts
+                        <li>ingredient</li>
+                        <li>ingredient</li>
+                        <li>ingredient</li>
+                        <li>ingredient</li>
+                    </ul>
+                </div>
+            </div>
+
+        </main>
+    </div>
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
