@@ -9,38 +9,45 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="bg-dark text-light text-center" id="hero">
-        <h1>Craving Finder</h1>
-    </div>
-    <div class="row min-vh-100">
-        <header class="col-2 d-flex flex-column bg-dark text-light">
+    <header>
+        <div class="text-light text-center" id="hero">
+<!-- ARE WE STICKING WITH THIS NAME? -->
+            <h1>Craving Finder</h1> 
+        </div>
+    </header>
+<!-- DO WE WANT A NAVBAR? -->
+<!-- ADD BOX SHADOW?  -->
+    <main>
+    <div class="row justify-self-center min-vh-75" id="main-height">
+        <div class="col-3" id="main-card">
             <h1>What are you craving?</h1>
             <input type="text">
             <button>Find It!</button>
-
-        </header>
-        <main class="col-10 d-flex flex-column">
-            <div class="row">
-                <div class="col-6 border-right border-secondary min-vh-100" id="find-restaurant">
-                    <h2 class="text-center">Find Restaurant</h2>
-                    <h3>Restaurant Name</h3>
-                        <img src="./assets/images/map1.png" alt="map of Restaurant area">
-                    <p>Restaurant description</p>
-                </div>
-                <div class="col-6 border-left border-secondary min-vh-100" id="make-at-home">
-                    <h2 class="text-center">Make It At Home</h2>
-                    <img src="./assets/images/food1.jpg" alt="turkey">
-                    <ul>Ingredient List and Amounts
-                        <li>ingredient</li>
-                        <li>ingredient</li>
-                        <li>ingredient</li>
-                        <li>ingredient</li>
-                    </ul>
-                </div>
-            </div>
-
-        </main>
+        </div>
+    
+        <div class="col-3" id="find-restaurant">
+            <h2 class="text-center">Find Restaurant</h2>
+            <h3>Restaurant Name</h3>
+                <img src="./assets/images/map1.png" alt="map of Restaurant area">
+                <p>Restaurant description</p>
+        </div>
+                
+        <div class="col-3 d-inline-block" id="make-at-home">
+            <h2 class="text-center">Make It At Home</h2>
+            <img src="./assets/images/food1.jpg" alt="turkey">
+            <ul>Ingredient List and Amounts
+                <li>ingredient</li>
+                <li>ingredient</li>
+                <li>ingredient</li>
+                <li>ingredient</li>
+            </ul>
+        </div>
     </div>
+    </main>
+    <!-- CHANGE FOOTER? -->
+        <footer>
+            <p>&copy;Craving Finder 2022. Thanks For Visiting!</p>
+        </footer>
     <script src="./assets/js/script.js"></script>
 </body>
 </html>
