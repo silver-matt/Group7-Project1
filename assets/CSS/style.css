@@ -12,6 +12,8 @@ html, body {
         background-repeat: no-repeat;
         background-size: cover;
         font-family: 'Times New Roman', Times, serif;
+        color: antiquewhite;
+
     }
      
     #find-recipe, 
@@ -24,12 +26,11 @@ html, body {
        color: antiquewhite;
     }
 
-    #find-recipe #find-info {
+    #find-info {
         margin: 10%;
         line-height: 2.5;
     }
     footer {
-        color: cadetblue;
         text-align: center;
         font-weight: bold;
         display: inline-block;
