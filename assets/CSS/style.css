@@ -4,24 +4,29 @@ html, body {
     bottom: 0;
     left: 0;
     right: 0;
-    color: cadetblue;
+    
     
     }
     body{
-        background-image: url("../images/background3.webp");
+        background-image: url("../images/foodAndWine3.png");
         background-repeat: no-repeat;
         background-size: cover;
-        
+        font-family: 'Times New Roman', Times, serif;
     }
-    #main-card, 
-    #find-restaurant, 
-    #make-at-home {
-       background-color: black;
-       border: solid 1px;
-       height: 100 ;
-       margin: 2% auto 12% auto;
+     
+    #find-recipe, 
+    #find-wine {
+       background-color: rgba(14, 14, 14, 0.7);
+       border: #880e4f solid 3px;
+       height: 25vw ;
+       margin: 5% auto 12% auto;
        text-align: center;
-       color: rgb(225, 239, 239);
+       color: antiquewhite;
+    }
+
+    #find-recipe #find-info {
+        margin: 10%;
+        line-height: 2.5;
     }
     footer {
         color: cadetblue;
