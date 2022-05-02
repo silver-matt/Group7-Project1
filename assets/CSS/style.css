@@ -1,34 +1,67 @@
-html, body {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    color: cadetblue;
-    
-    }
-    body{
-        background-image: url("../images/background3.webp");
-        background-repeat: no-repeat;
-        background-size: cover;
-        
-    }
-    #main-card, 
-    #find-restaurant, 
-    #make-at-home {
-       background-color: black;
-       border: solid 1px;
-       height: 100 ;
-       margin: 2% auto 12% auto;
-       text-align: center;
-       color: rgb(225, 239, 239);
-    }
-    footer {
-        color: cadetblue;
-        text-align: center;
-        font-weight: bold;
-        display: inline-block;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-      }
+html,
+body {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: cadetblue;
+}
+body {
+  background-image: url("../images/table-background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#main-card,
+#find-restaurant,
+#make-at-home {
+  background-color: black;
+  border: solid 1px;
+  height: 100;
+  margin: 2% auto 12% auto;
+  text-align: center;
+  color: rgb(225, 239, 239);
+}
+footer {
+  color: cadetblue;
+  text-align: center;
+  font-weight: bold;
+  display: inline-block;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+#hero h1 {
+  color: black;
+  margin: auto;
+  position: relative;
+  top: 275px;
+  text-align: center;
+  font-weight: bold;
+}
+.food-link {
+    font-weight: bold;
+    outline: none;
+    border: none;
+    display: inline-block;
+    padding: 10px 15px;
+    background:white;
+    border-radius: 12px;
+    position: relative;
+    top: -3px;
+    box-shadow: 0 3px var(--grey);
+    top: 280px;
+}
+.drink-link {
+    font-weight: bold;
+    outline: none;
+    border: none;
+    display: inline-block;
+    padding: 10px 15px;
+    background:white;
+    border-radius: 12px;
+    position: relative;
+    top: -3px;
+    box-shadow: 0 3px var(--grey);
+     top: 280px;
+}
