@@ -4,18 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Craving Finder - Food</title>
 </head>
 <body>
+    <header id="site-header-text">
+        <h1>Let's find you something to eat!</h1>
+    </header>
+    <div id="sitemain">
+        <section class="ingredients_section">
+            <div id="food-sidebar">
+                <!-- Search Area with the search bar and buttons -->
+                <div id="searchArea">
+                    <br>
+                    <p><strong>What are you craving?</strong></p>
+                    <input id="foodSearch" type="text" placeholder="Find Your Favorite Food!" class="w-100">
+                    <br>
+                    <div id="btnFood">
+                        <button id="cook" class="button button-rounded-hover"> Show Me Recipes </button>
+    
+                    </div>
+                </div>
+                <!-- This section is below the search area -->
 
-    <div class="row justify-self-center min-vh-75" id="main-height">
-        <div class="col-3" id="main-card">
-            <h1>What are you craving to eat?</h1>
-            <input type="text">
-            <button>Find It!</button>
-        </div>
+                <hr>
 
+                <!-- Add a Search History -->
+                <div id="history-container">
+                    <h2>Search History</h2>
+                    <br>
+                    <div id="history"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
     <a href="../Group7-Project1/index.html">Home</a>
+
     <script src="./assets/js/script.js"></script>
 
 </body>
