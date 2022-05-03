@@ -7,51 +7,49 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Craving Finder</title>
 </head>
 <body>
-    <header>
-<!-- ARE WE STICKING WITH THIS NAME? --> 
-<nav>
-    <div class="nav-wrapper pink darken-4 z-depth-3">
-      <a  class="brand-logo center">Craving Finder</a>
-      <ul id="nav-mobile" class="left hide-on-med-and-down">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./food.html">Recipes</a></li>
-        <li><a href="./drink.html">Wine</a></li>
-      </ul>
+  <header>
+    <div class="text-light text-center" id="hero">
+      <!-- fix title -->
+      <h1>Craving Finder</h1>
     </div>
-  </nav> 
+  </header>
 
-    </header>
-
-    <main>
-        <div class="row justify-self-center">
-        
+  <!-- add class/id for js -->
+<!-- find icon for cocktail and food for buttons! -->
+  <main>
+        <div class="row justify-self-center" id="finders">
         <div class="col-5 z-depth-5" id="find-recipe">
            <div id="find-info">
-            <h2 class="text-center">Find a Recipe</h2>
-            <p>Hungry? Find the perfect recipe to cook </p>
+            <h2 class="text-center">Hungry?</h2>
+            <p>Find the <span>perfect</span> recipe to make at home!</p>
             <a href="../food.html"><button class="btn purple waves-purple">Recipe</button></a>
            </div>
         </div>
       
         <div class="col-5 z-depth-5" id="find-wine">
         <div id="find-info">
-            <h2>Find Wine</h2>
-            <p>Click here to find the perfect wine to go with your meal</p>
-            <a href="../drink.html"><button class="btn purple waves-purple">Wine</button></a>
+            <h2 class="text-center">Thirsty?</h2>
+            <p>Find the perfect cocktail recipe to pair with your meal!</p>
+            <a href="../drink.html"><button class="btn purple waves-purple">drinks</button></a>
         </div>   
         </div>
-    
     </div>
-
     </main>
-    <!-- CHANGE FOOTER? -->
+
         <footer>
             <p>&copy;Craving Finder 2022. Thanks For Visiting!</p>
         </footer>
-
+<!-- add script for bootstrap and materialize -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
