@@ -30,26 +30,54 @@ function callFoodAPI() {
 
 function callDrinkAPI() {
   var drinkInput = $(this).parent().siblings("input").val();
-  var drinksApi = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?q=' + drinkInput;
-fetch(drinksApi)
-.then(function (data) {
-  console.log(data);
-  return data.json();
-})
-.then(function (data){
-  var drinkArray = data;
-  displayIngrList(drinkArray);
-console.log(drinkArray);
-})
+  console.log("Drink button click, search: " + drinkInput);
+  // var drinksApi = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?q=' + drinkInput;
+  var drinksApi = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita";
+  fetch(drinksApi)
+  .then(function (data) {
+    // console.log(data);
+    return data.json();
+  })
+  .then(function (data){
+    var drinkArray = data;
+    displayIngrList(drinkArray);
+    // console.log(drinkArray);
+    // console.log(drinkArray.drinks);
+    // console.log(drinkArray.drinks[0]);
+    createDrinkArray(drinkArray.drinks[0]);
+  })
+}
+function createDrinkArray(userDrink){
+  var ingredientList = [];
+  console.log(userDrink);
+  var ingredientNum = 1;
+  var ingredient = userDrink[`strIngredient${ingredientNum}`];
+  var measure = userDrink[`strMeasure${ingredientNum}`];
+  var ingredientString = "";
+
+  while(ingredient != null){
+    ingredient = userDrink[`strIngredient${ingredientNum}`];
+    measure = userDrink[`strMeasure${ingredientNum}`];
+    if(ingredient && measure){
+      ingredientString = measure + " " + ingredient;
+      ingredientList.push(ingredientString);
+    }
+    else if(ingredient){
+      ingredientString = ingredient;
+      ingredientList.push(ingredientString);
+    }
+    ingredientNum++;
+  }
+  displayIngrList(ingredientList);
 }
 
 
 function displayImage() {}
-function displayIngrList(foodArray) {
-  for (var i = 0; i < foodArray.length; i++) {
-    console.log(foodArray[i]);
+function displayIngrList(ingrArray) {
+  for (var i = 0; i < ingrArray.length; i++) {
+    console.log(ingrArray[i]);
     $(".ingList").append("<li class='ingTest'></li>");
-    $(".ingTest").text(foodArray[i]);
+    $(".ingTest").text(ingrArray[i]);
     $(".ingTest").removeClass("ingTest");
   }
 }
