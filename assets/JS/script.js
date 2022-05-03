@@ -40,7 +40,7 @@ function callDrinkAPI() {
   })
   .then(function (data){
     var drinkArray = data;
-    displayIngrList(drinkArray);
+    // displayIngrList(drinkArray);
     // console.log(drinkArray);
     // console.log(drinkArray.drinks);
     // console.log(drinkArray.drinks[0]);
@@ -74,11 +74,19 @@ function createDrinkArray(userDrink){
 
 function displayImage() {}
 function displayIngrList(ingrArray) {
+  clearCurrentDisplay();
   for (var i = 0; i < ingrArray.length; i++) {
     console.log(ingrArray[i]);
     $(".ingList").append("<li class='ingTest'></li>");
     $(".ingTest").text(ingrArray[i]);
     $(".ingTest").removeClass("ingTest");
+  }
+}
+function clearCurrentDisplay(){
+  var parentNode = document.querySelector(".ingList");
+  while(parentNode.hasChildNodes()){
+    let childNode = parentNode.firstChild;
+    parentNode.removeChild(childNode);
   }
 }
 
