@@ -18,39 +18,43 @@
 </head>
 <body>
   <header>
-    <div class="text-light text-center" id="hero">
-      <!-- fix title -->
+    <div class=" text-center" id="hero">
       <h1>Craving Finder</h1>
     </div>
+    <!-- add side nav
+    home
+    drink
+    food -->
   </header>
 
-  <!-- add class/id for js -->
-<!-- find icon for cocktail and food for buttons! -->
   <main>
-        <div class="row justify-self-center" id="finders">
-        <div class="col-5 z-depth-5" id="find-recipe">
-           <div id="find-info">
+    <!-- drop buttons
+        on hover, enlarge area
+        on hover, food/drink icon -->
+    <div class="row justify-self-center">
+        
+        <div class="col-4 z-depth-5" id="finders">
+           <div id="finder-content">
             <h2 class="text-center">Hungry?</h2>
-            <p>Find the <span>perfect</span> recipe to make at home!</p>
-            <a href="../food.html"><button class="btn purple waves-purple">Recipe</button></a>
+            <p class="text-center">Hungry? Find the perfect recipe to cook </p>
+            <a href="../food.html"><button class="btn white waves-green" >Hungry</button></a>
            </div>
         </div>
       
-        <div class="col-5 z-depth-5" id="find-wine">
-        <div id="find-info">
+        <div class="col-4 z-depth-5" id="finders">
+        <div id="finder-content">
             <h2 class="text-center">Thirsty?</h2>
-            <p>Find the perfect cocktail recipe to pair with your meal!</p>
-            <a href="../drink.html"><button class="btn purple waves-purple">drinks</button></a>
+            <p class="text-center">Find your favorite cocktail recipe!</p>
+            <a href="../drink.html"><button class="btn white waves-green" id="finder-btn">Thirsty</button></a>
         </div>   
         </div>
     </div>
-    </main>
+  </main>
 
-        <footer>
-            <p>&copy;Craving Finder 2022. Thanks For Visiting!</p>
-        </footer>
-<!-- add script for bootstrap and materialize -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="./assets/js/script.js"></script>
+  <footer>
+    <p>&copy;Craving Finder 2022. Thanks For Visiting!</p>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="./assets/js/script.js"></script>
   </body>
 </html>

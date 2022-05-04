@@ -10,34 +10,48 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-<!-- ARE WE STICKING WITH THIS NAME? --> 
-  <nav>
-    <div class="nav-wrapper pink darken-4 z-depth-3">
-      <a  class="brand-logo center">Craving Finder</a>
-      <ul id="nav-mobile" class="left hide-on-med-and-down">
-        <li><a href="../Group7-Project1/index.html">Home</a></li>
-        <li><a href="../Group7-Project1/food.html">Recipes</a></li>
-        <li><a href="../Group7-Project1/drink.html">Wine</a></li>
-      </ul>
-    </div>
-  </nav>
+    <header id="site-header-text">
+        <h1>Let's Make A Drink!</h1>
     </header>
-    <main>
-        <div class="row justify-self-center" id="main-height">
-            <div class="col-8 z-depth-4" id="find-wine">
-                <div id="find-info">
-                    <h2>Find Wine</h2>
-                    <p>Search through our list of wines!</p>
-                    <button class="btn purple waves-purple">Wine</button>
-                </div>   
+    <div id="sitemain">
+        <section class="ingredients_section">
+            <div id="drinks-sidebar">
+                <!-- Search Area with the search bar and buttons -->
+                <div id="searchArea">
+                    <br>
+                    <p><strong>What Are You Craving?</strong></p>
+                    <input id="drinksSearch" type="text" placeholder="Find Your Favorite Drink" class="w-100">
+                    <br>
+                    <div id="btnDrink">
+                        <button id="cook" class="button button-rounded-hover"> Show Me Recipes </button>
+                    </div>
                 </div>
-    </main>
-    <footer>
-        <p>&copy;Craving Finder 2022. Thanks For Visiting!</p>
-    </footer>
+                <a href="../Group7-Project1/index.html">Home</a>
+                
+                <hr><br>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="./assets/js/script.js"></script>
+                <div id="disclaimer">
+                    <h2>Disclaimer:</h2>
+                    <p>Warning: Many of the drinks and recipes on this site contains alcohol. Excessive alcohol consumption can be harmful to your health and can impair your judgement. Not suitable for inviduals under the age of 21. Please drink responsibly.</p>
+                </div>
+
+                <br>
+                <hr>
+
+                <div id="history-container">
+                    <div class="img-holder"></div>
+                    <h2 class="food-name"></h2>
+                    <ol class="ingList"></ol>
+                    <br>
+                    <div id="history"></div>
+                </div>
+            </div>
+        </section>
+        <div class="border" id="drinks-results-container">
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+
 </body>
 </html>
