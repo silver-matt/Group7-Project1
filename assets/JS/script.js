@@ -21,11 +21,15 @@ function callFoodAPI() {
       return data.json();
     })
     .then(function (data) {
+      console.log(data);
       var foodArray = data.hits[0].recipe.ingredientLines;
-      displayIngrList(foodArray);
+      var foodName = data.hits[0].recipe.label;
+      var foodImg = data.hits[0].recipe.image;
+      displayImage(foodImg);
+      displayIngrList(foodArray, foodName);
     });
 
-  console.log(foodInput);
+  // console.log(foodInput);
 }
 
 function callDrinkAPI() {
@@ -40,8 +44,8 @@ function callDrinkAPI() {
   })
   .then(function (data){
     var drinkArray = data;
-    displayIngrList(drinkArray);
-    // console.log(drinkArray);
+    // displayIngrList(drinkArray);
+    console.log(drinkArray);
     // console.log(drinkArray.drinks);
     // console.log(drinkArray.drinks[0]);
     createDrinkArray(drinkArray.drinks[0]);
@@ -54,6 +58,8 @@ function createDrinkArray(userDrink){
   var ingredient = userDrink[`strIngredient${ingredientNum}`];
   var measure = userDrink[`strMeasure${ingredientNum}`];
   var ingredientString = "";
+  var drinkName = userDrink.strDrink;
+  var drinkImg = userDrink.strDrinkThumb;
 
   while(ingredient != null){
     ingredient = userDrink[`strIngredient${ingredientNum}`];
@@ -68,17 +74,32 @@ function createDrinkArray(userDrink){
     }
     ingredientNum++;
   }
-  displayIngrList(ingredientList);
+  displayImage(drinkImg);
+  displayIngrList(ingredientList, drinkName);
 }
 
 
-function displayImage() {}
-function displayIngrList(ingrArray) {
+function displayImage(imgLink) {
+  console.log(imgLink);
+  var image = document.createElement("img");
+  image.setAttribute("src", imgLink);
+  document.querySelector(".img-holder").appendChild(image);
+}
+function displayIngrList(ingrArray, name) {
+  clearCurrentDisplay();
+  $(".food-name").text(name);
   for (var i = 0; i < ingrArray.length; i++) {
-    console.log(ingrArray[i]);
+    // console.log(ingrArray[i]);
     $(".ingList").append("<li class='ingTest'></li>");
     $(".ingTest").text(ingrArray[i]);
     $(".ingTest").removeClass("ingTest");
+  }
+}
+function clearCurrentDisplay(){
+  var parentNode = document.querySelector(".ingList");
+  while(parentNode.hasChildNodes()){
+    let childNode = parentNode.firstChild;
+    parentNode.removeChild(childNode);
   }
 }
 
