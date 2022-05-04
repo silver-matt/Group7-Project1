@@ -42,9 +42,10 @@ html, body {
     #search-criteria{
         height: 35px;
         margin-top: 1%;
+        line-height: 12px;
+
     }
     #foodSearch {
-        height: 24px;
         width: 250px;
         font-size: 15px;
         border: solid 1px rgb(1, 1, 1);
