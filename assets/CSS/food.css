@@ -1,0 +1,69 @@
+.sitemain {
+    min-height: 100vh;
+}
+
+.ingList {
+    background-image: url("../images/table-background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.ingredients_section,
+#food-sidebar,
+#searchArea {
+    display: flex;
+    flex-direction: column;
+}
+
+.ingTest {
+    color: red;
+}
+
+
+
+.w-50,
+.search-btn {
+    width: 100%;
+}
+
+.w-50 {
+
+
+    padding-top: 18px;
+    padding-bottom: 10px;
+
+    font-size: 1.1rem;
+    font-family: inherit;
+    outline: 0;
+    border: 1px solid coral;
+    color: coral;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.w-50::placeholder {
+    color: var(--tenne-tawny);
+}
+
+.button {
+    width: 55px;
+    height: 55px;
+    font-size: 1.8rem;
+    background: coral;
+    color: white;
+    border: none;
+
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    transition: all 0.4s linear;
+    -webkit-transition: all 0.4s linear;
+    -moz-transition: all 0.4s linear;
+    -ms-transition: all 0.4s linear;
+    -o-transition: all 0.4s linear;
+}
+
+.button:hover {
+    background: greenyellow;
+}
