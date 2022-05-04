@@ -83,7 +83,7 @@ function displayImage(imgLink) {
   console.log(imgLink);
   var image = document.createElement("img");
   image.setAttribute("src", imgLink);
-  document.querySelector("#img-holder").appendChild(image);
+  document.querySelector(".img-holder").appendChild(image);
 }
 function displayIngrList(ingrArray, name) {
   clearCurrentDisplay();
