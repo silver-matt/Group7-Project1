@@ -3,18 +3,13 @@ const foodKey = "0042429a5d9430ed059f828e86fb5761";
 const recipeId = "f44e018b";
 
 
-// **DELETE LATER**dummy ingredient list to set up html
-var dummyArr = [
-  "ingredient 1",
-  "ingredient 2",
-  "ingredient 3",
-  "ingredient 4",
-  "ingredient 5",
-];
+
 
 function callFoodAPI() {
   //call correct API, get data, and pass it to createIngrList()
-  var foodInput = $(this).parent().siblings("input").val();
+  // var foodInput = $(this).parent().siblings("input").val();
+  var foodInput = $(this).siblings("input").val();
+  // console.log(foodInput);
   var foodApi = `https://api.edamam.com/search?q=${foodInput}&app_id=${recipeId}&app_key=${foodKey}&from=0&to=20`;
   fetch(foodApi)
     .then(function (data) {
@@ -25,15 +20,16 @@ function callFoodAPI() {
       var foodArray = data.hits[0].recipe.ingredientLines;
       var foodName = data.hits[0].recipe.label;
       var foodImg = data.hits[0].recipe.image;
-      displayImage(foodImg);
       displayIngrList(foodArray, foodName);
+      displayImage(foodImg);
     });
 
-  // console.log(foodInput);
+  console.log(foodInput);
 }
 
 function callDrinkAPI() {
-  var drinkInput = $(this).parent().siblings("input").val();
+  // var drinkInput = $(this).parent().siblings("input").val();
+  var drinkInput = $(this).siblings("input").val();
   console.log("Drink button click, search: " + drinkInput);
   // var drinksApi = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?q=' + drinkInput;
   var drinksApi = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita";
@@ -74,8 +70,8 @@ function createDrinkArray(userDrink){
     }
     ingredientNum++;
   }
-  displayImage(drinkImg);
   displayIngrList(ingredientList, drinkName);
+  displayImage(drinkImg);
 }
 
 
@@ -96,10 +92,20 @@ function displayIngrList(ingrArray, name) {
   }
 }
 function clearCurrentDisplay(){
+  var imgParent = document.querySelector(".img-holder");
+  if(imgParent){
+    while(imgParent.hasChildNodes()){
+      let imgEl = imgParent.firstChild;
+      imgParent.removeChild(imgEl);
+    }
+  }
+  
   var parentNode = document.querySelector(".ingList");
-  while(parentNode.hasChildNodes()){
-    let childNode = parentNode.firstChild;
-    parentNode.removeChild(childNode);
+  if(parentNode){
+    while(parentNode.hasChildNodes()){
+      let childNode = parentNode.firstChild;
+      parentNode.removeChild(childNode);
+    }
   }
 }
 
