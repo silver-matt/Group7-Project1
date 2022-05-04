@@ -47,7 +47,9 @@ html, body {
 
     }
     #disclaimer {
-        font-size: x-small;
+        font-size: small;
+        display: inline-block;
+        bottom: 0%;
     }
 
       #search-criteria{
