@@ -3,11 +3,12 @@
 }
 
 .ingList {
-    background-image: url("../images/table-background.jpeg");
+    background-image: url("../images/background3.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     font-size: larger;
     font-weight: bold;
+    color: aliceblue;
 }
 
 .ingredients_section,
@@ -15,10 +16,11 @@
 #searchArea {
     display: flex;
     flex-direction: column;
+
 }
 
 .ingTest {
-    color: red;
+    color: white;
 }
 
 
@@ -30,7 +32,7 @@
 
 .w-50 {
 
-
+    align-items: center;
     padding-top: 18px;
     padding-bottom: 10px;
 
