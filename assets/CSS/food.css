@@ -1,11 +1,4 @@
-/* CHANGE TEXT FONT
-   CHANGE BACKGROUND
-   ALIGN BOX
-   ALIGN TEXT
-   
-   */
-
-   html, body {
+html, body {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -29,19 +22,46 @@
       font-family: 'Goudy Old Style'
 
     }
-   
-    #finders {
+   main {
+       height: 87%;
+       margin: 5% auto;
+   }
+    #searchArea {
        background-color: rgba(73, 145, 94, 0.7);
        border:rgba(53, 135, 95) solid 4px;
-       height: 20vw ;
-       margin: 8% auto;
+       margin: 2% auto;
+       width: 60%;
+       height: 80%;
        text-align: center;
        color: antiquewhite;
     }
-    #finder-content {
-      margin: 10%;
-      line-height: 2.;
+    #search-title {
       font-size: 16pt;
+      margin-top: 5px;
+    }
+    #search-criteria{
+        height: 35px;
+        margin-top: 1%;
+        line-height: 12px;
+
+    }
+    #foodSearch {
+        width: 250px;
+        font-size: 15px;
+        border: solid 1px rgb(1, 1, 1);
+    }
+    #submit-search {
+        position: relative;
+        height: 20px;
+        justify-content: center;
+        font-size: 13px;
+        padding: 0;
+        border: solid 1px rgb(1, 1, 1);
+        font-size: 15px;
+    }
+    #foodSearch:hover {
+        background-color: aqua;
+        color: black;
     }
     footer {
         color: black;
