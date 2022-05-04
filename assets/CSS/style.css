@@ -7,11 +7,13 @@ body {
   right: 0;
   color: cadetblue;
 }
+
 body {
   background-image: url("../images/table-background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 #main-card,
 #find-restaurant,
 #make-at-home {
@@ -22,6 +24,7 @@ body {
   text-align: center;
   color: rgb(225, 239, 239);
 }
+
 footer {
   color: cadetblue;
   text-align: center;
@@ -31,6 +34,7 @@ footer {
   width: 100%;
   bottom: 0;
 }
+
 #hero h1 {
   color: black;
   margin: auto;
@@ -39,29 +43,32 @@ footer {
   text-align: center;
   font-weight: bold;
 }
+
 .food-link {
-    font-weight: bold;
-    outline: none;
-    border: none;
-    display: inline-block;
-    padding: 10px 15px;
-    background:white;
-    border-radius: 12px;
-    position: relative;
-    top: -3px;
-    box-shadow: 0 3px var(--grey);
-    top: 280px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  display: inline-block;
+  padding: 10px 15px;
+  background: white;
+  border-radius: 12px;
+  text-decoration: none;
+  position: relative;
+  top: -3px;
+  box-shadow: 0 3px var(--grey);
+  top: 280px;
 }
+
 .drink-link {
-    font-weight: bold;
-    outline: none;
-    border: none;
-    display: inline-block;
-    padding: 10px 15px;
-    background:white;
-    border-radius: 12px;
-    position: relative;
-    top: -3px;
-    box-shadow: 0 3px var(--grey);
-     top: 280px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  display: inline-block;
+  padding: 10px 15px;
+  background: white;
+  border-radius: 12px;
+  position: relative;
+  top: -3px;
+  box-shadow: 0 3px var(--grey);
+  top: 280px;
 }
