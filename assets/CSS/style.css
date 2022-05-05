@@ -1,11 +1,4 @@
 
-/* CHANGE TEXT FONT
-   CHANGE BACKGROUND
-   ALIGN BOX
-   ALIGN TEXT
-   
-   */
-
 html, body {
     position: fixed;
     top: 0;
@@ -24,10 +17,10 @@ html, body {
         color: antiquewhite;
 
     }
-    #hero h1 {
-      font-weight: bolder;
-      color: blanchedalmond;
-      font-family: 'Goudy Old Style'
+    h1 {
+      font-weight: 500;
+      font-size: 34pt;
+      font-family: fantasy;
 
     }
    
@@ -44,6 +37,9 @@ html, body {
       line-height: 2.;
       font-size: 16pt;
     }
+
+    
+
     footer {
         color: black;
         text-align: center;
