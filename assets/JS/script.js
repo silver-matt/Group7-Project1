@@ -2,6 +2,8 @@ var food = "popular";
 const foodKey = "0042429a5d9430ed059f828e86fb5761";
 const recipeId = "f44e018b";
 
+var recipeIndex = 0;
+
 
 
 
@@ -23,8 +25,6 @@ function callFoodAPI() {
       displayIngrList(foodArray, foodName);
       displayImage(foodImg);
     });
-
-  console.log(foodInput);
 }
 
 function callDrinkAPI() {
