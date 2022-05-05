@@ -9,7 +9,7 @@ function callFoodAPI() {
   //call correct API, get data, and pass it to createIngrList()
   // var foodInput = $(this).parent().siblings("input").val();
   var foodInput = $(this).siblings("input").val();
-  // console.log(foodInput);
+  console.log(foodInput);
   var foodApi = `https://api.edamam.com/search?q=${foodInput}&app_id=${recipeId}&app_key=${foodKey}&from=0&to=20`;
   fetch(foodApi)
     .then(function (data) {
@@ -35,12 +35,12 @@ function callDrinkAPI() {
   var drinksApi = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=margarita";
   fetch(drinksApi)
   .then(function (data) {
-    // console.log(data);
+    console.log(data);
     return data.json();
   })
   .then(function (data){
     var drinkArray = data;
-    // displayIngrList(drinkArray);
+    displayIngrList(drinkArray);
     console.log(drinkArray);
     // console.log(drinkArray.drinks);
     // console.log(drinkArray.drinks[0]);

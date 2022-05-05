@@ -1,3 +1,4 @@
+
 /* CHANGE TEXT FONT
    CHANGE BACKGROUND
    ALIGN BOX
@@ -5,7 +6,7 @@
    
    */
 
-   html, body {
+html, body {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -52,3 +53,5 @@
         width: 100%;
         bottom: 0;
       }
+
+      
