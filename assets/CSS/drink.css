@@ -1,0 +1,93 @@
+html, body {
+ 
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    
+    }
+    body{
+      /* find new background */
+        background-image: url("../images/table-background.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: 'Times New Roman', Times, serif;
+        color: antiquewhite;
+
+    }
+    #hero h1 {
+      font-weight: bolder;
+      color: blanchedalmond;
+      font-family: 'Goudy Old Style'
+
+    }
+
+    main {
+        height: 87%;
+        margin: 5% auto;
+    }
+
+    #searchArea {
+        background-color: rgba(73, 145, 94, 0.7);
+        border:rgba(53, 135, 95) solid 4px;
+        margin: 2% auto;
+        width: 60%;
+        height: 80%;
+        text-align: center;
+        color: antiquewhite; 
+    }
+    #search-title {
+        font-size: 16pt;
+        margin-top: 5px;
+      }
+    #disclaimer h3 {
+        font-size: small;
+        font-weight: bold;
+
+    }
+    #disclaimer {
+        font-size: small;
+        display: inline-block;
+        bottom: 0%;
+    }
+    #disclaimer:hover {
+        font-size: large;
+        color: red;
+    }
+
+      #search-criteria{
+          height: 35px;
+          margin-top: 1%;
+      }
+      #drinkSearch {
+          height: 24px;
+          width: 250px;
+          font-size: 15px;
+          border: solid 1px rgb(1, 1, 1);
+      }
+      #drinkSearch:hover {
+        background-color: aqua;
+        color: black;
+    }
+
+    .img-holder {
+      justify-content: left;
+    }
+    img {
+      height: 200px;
+      width: 200px;
+    }
+    #food-name {
+
+    }
+
+    footer {
+        color: black;
+        text-align: center;
+        font-weight: bold;
+        display: inline-block;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+      }
