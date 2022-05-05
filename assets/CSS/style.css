@@ -10,7 +10,7 @@ html, body {
     }
     body{
       /* find new background */
-        background-image: url("../images/table-background.jpeg");
+        background-image: url("../images/mainBackground.webp");
         background-repeat: no-repeat;
         background-size: cover;
         font-family: 'Times New Roman', Times, serif;
