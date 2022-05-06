@@ -23,14 +23,14 @@
     <body>
         <header>
             <div class=" text-center" id="hero">
-                <h1>Craving Finder</h1>
+                <h1><a href="./index.html">Craving Finder</a></h1>
               </div>
         </header>
 
         <main>
             
             <div class="row justify-content-center z-depth-5" id="searchArea">
-                <div class="col-6" id="search-title">
+                <div class="col-12" id="search-title">
                     <h1>Let's find you something to eat!</h1>
                 </div>
 
@@ -38,17 +38,17 @@
                     <input id="foodSearch" type="text" placeholder="Find Your Favorite Food!" class="col-6 w-50">
                     <button type="submit" class="btn" ><i class="fas fa-search"></i></button>
                 </div>
-                <a href="./index.html"><button class="btn waves-green">Home</button></a>
                 
-                <div class="justify-self-center" id="img-holder"></div>
-                <h3 class="food-name"></h3>
+                <!-- <div class="justify-self-center" id="img-holder"></div>
+                <h3 class="food-name"></h3> -->
 
                 <!-- Add a Search History -->
                 <div id="history-container" class="row">
+                    <div class="col-1"><button id="prevFood" class="btn btn-secondary"><i class="fa-solid fa-caret-left"></i></button></div>
+                    <h2  id="food-name" class="col-10"></h2>
+                    <div class="col-1"><button id="nextFood" class="btn btn-secondary"><i class="fa-solid fa-caret-right"></i></button></div>
+                    <ol id="ingList" class="col-6"></ol>
                     <div id="img-holder" class="col-6"></div>
-                    <h2  id="food-name" class="col-5"></h2>
-                    <ol id="ingList" class="col-5">
-                    </ol>
                 </div>
             </div>
         </main>
