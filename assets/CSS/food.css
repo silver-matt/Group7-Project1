@@ -1,6 +1,4 @@
-
-   
-  body{
+body{
     background-image: url("../images/table-background.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,15 +43,7 @@
         font-size: 15px;
         border: solid 1px rgb(1, 1, 1);
     }
-    #submit-search {
-        position: relative;
-        height: 20px;
-        justify-content: center;
-        font-size: 13px;
-        padding: 0;
-        border: solid 1px rgb(1, 1, 1);
-        font-size: 15px;
-    }
+
     #foodSearch:hover {
         background-color: aqua;
         color: black;
