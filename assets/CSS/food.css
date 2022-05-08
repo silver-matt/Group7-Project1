@@ -1,71 +1,75 @@
 body{
-    background-image: url("../images/table-background.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-image: url("../images/table-background.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: fantasy;
+  color: #a7ffeb;
+}
+
+  #hero h1 {
     font-family: fantasy;
+    color: silver;
+    font-weight: 500;
+    font-size: 55pt;
+    text-shadow: 2px 2px #004d40;
     color: #a7ffeb;
   }
 
-  #hero h1 {
-      font-family: fantasy;
-      color: silver;
-      font-weight: 500;
-      font-size: 55pt;
-      text-shadow: 2px 2px #004d40;
-      color: #a7ffeb;
-
-    }
-   main {
-       height: 87%;
-       margin: 5% auto;
-   }
-    #searchArea {
-       background-color: rgba(73, 145, 94, 0.7);
-       border:rgba(53, 135, 95) solid 4px;
-       margin: 2% auto;
-       width: 60%;
-       height: 80%;
-       text-align: center;
-      }
-
-    #search-title h2 {
-   text-shadow: 2px 2px #171616;
+  main {
+    height: 87%;
+    margin: 5% auto;
+  }
+    
+  #searchArea {
+    background-color: rgba(73, 145, 94, 0.7);
+    border:rgba(53, 135, 95) solid 4px;
+    margin: 2% auto;
+    width: 60%;
+    height: 80%;
+    text-align: center;
+  }
+    
+  #search-title h2 {
+    text-shadow: 2px 2px #171616;
     font-size: 30pt;
-    }
-    #search-criteria{
-        height: 35px;
-        margin-top: 1%;
-        line-height: 12px;
+  }
+    
+  #search-criteria{
+    height: 35px;
+    margin-top: 1%;
+    line-height: 12px;
 
-    }
-    #foodSearch {
-        width: 250px;
-        font-size: 15px;
-        border: solid 1px rgb(1, 1, 1);
-    }
+  }
+    
+  #foodSearch {
+    width: 250px;
+    font-size: 15px;
+    border: solid 1px rgb(1, 1, 1);
+  }
+    
+  #foodSearch:hover {
+    background-color: aqua;
+    color: black;
+    font-size: large;
+  }
+  
+  ol {
+    color: black;
+    text-align: left;
+  }
+  
+  img {
+    height: 300px;
+    width: 310px;
+  }
 
-    #foodSearch:hover {
-        background-color: aqua;
-        color: black;
-        font-size: large;
-    }
-
-    ol {
-      color: black;
-      text-align: left;
-    }
-    img {
-      height: 300px;
-      width: 310px;
-    }
-
-    footer {
-        color: black;
-        text-align: center;
-        display: inline-block;
-        position: fixed;
-        width: 100%;
-        bottom: 0;
-      }
+  footer {
+    color: black;
+    text-align: center;
+    display: inline-block;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
 
       
