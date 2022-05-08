@@ -1,25 +1,20 @@
-html, body {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    
-    
-    }
-    body{
-      /* find new background */
-        background-image: url("../images/table-background.jpeg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        font-family: 'Times New Roman', Times, serif;
-        color: antiquewhite;
 
-    }
-    #hero h1 {
-      font-weight: bolder;
-      color: blanchedalmond;
-      font-family: 'Goudy Old Style'
+   
+  body{
+    background-image: url("../images/table-background.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: fantasy;
+    color: #a7ffeb;
+  }
+
+  #hero h1 {
+      font-family: fantasy;
+      color: silver;
+      font-weight: 500;
+      font-size: 55pt;
+      text-shadow: 2px 2px #004d40;
+      color: #a7ffeb;
 
     }
    main {
@@ -33,11 +28,11 @@ html, body {
        width: 60%;
        height: 80%;
        text-align: center;
-       color: antiquewhite;
-    }
-    #search-title {
-      font-size: 16pt;
-      margin-top: 5px;
+      }
+
+    #search-title h2 {
+   text-shadow: 2px 2px #171616;
+    font-size: 30pt;
     }
     #search-criteria{
         height: 35px;
@@ -62,11 +57,18 @@ html, body {
     #foodSearch:hover {
         background-color: aqua;
         color: black;
+        font-size: large;
     }
+
+    ol {
+      color: black;
+      text-align: left;
+    }
+
+
     footer {
         color: black;
         text-align: center;
-        font-weight: bold;
         display: inline-block;
         position: fixed;
         width: 100%;
